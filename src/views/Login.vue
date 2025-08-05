@@ -41,11 +41,12 @@ export default {
       const startTime = Date.now();
 
       try {
-        const response = await fetch('http://localhost:10000/api/auth/login', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: this.email, password: this.password })
-        });
+const response = await fetch(`${import.meta.env.VITE_API_URL}/auth/login`, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ email: this.email, password: this.password })
+});
+
 
         const data = await response.json();
 
