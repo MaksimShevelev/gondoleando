@@ -3,14 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+"scripts": {
   "frontend": "vite",
   "backend": "node backend/server.js",
   "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
   "build": "vite build",
   "preview": "vite preview",
-  "start": "npm run dev"
-  },
+  "start": "node backend/server.js"
+},
   "dependencies": {
     "axios": "^1.11.0",
     "bcrypt": "^6.0.0",
