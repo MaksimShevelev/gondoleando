@@ -7,7 +7,7 @@ const categorias = ['almacen', 'bebidas', 'frescos', 'limpieza', 'congelados', '
 const productos = [];
 
 // ✅ Ruta pública correcta del logo desde el backend
-const LOGO_DIA = 'http://localhost:3001/public/img/dia.png';
+const LOGO_DIA = 'http://localhost:10000/public/img/dia.png';
 
 async function obtenerProductos(categoria) {
   let pagina = 1;

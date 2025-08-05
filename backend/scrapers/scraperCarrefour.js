@@ -3,7 +3,7 @@ import fs from 'fs';
 import cron from 'node-cron';
 
 const BASE_URL = 'https://www.carrefour.com.ar/api/catalog_system/pub/products/search/';
-const LOGO_CARREFOUR = 'http://localhost:3001/public/img/carrefour.png';
+const LOGO_CARREFOUR = 'http://localhost:10000/public/img/carrefour.png';
 
 const categoriasMap = {
   almacen: 'almacen',

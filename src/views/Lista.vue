@@ -423,7 +423,7 @@ export default {
       const token = localStorage.getItem("token");
       if (!token || !this.nombreLista || !this.lista.length) return;
       try {
-        const res = await fetch("http://localhost:3001/api/listas", {
+        const res = await fetch("http://localhost:10000/api/listas", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -521,7 +521,7 @@ export default {
         localStorage.setItem("listasDeComprasPorUsuario", JSON.stringify(listasPorUsuario));
       }
       try {
-        await fetch(`http://localhost:3001/api/listas/${encodeURIComponent(listaABorrar)}`, {
+        await fetch(`http://localhost:10000/api/listas/${encodeURIComponent(listaABorrar)}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${token}`,
