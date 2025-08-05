@@ -3,17 +3,36 @@ import { MongoClient, ObjectId } from 'mongodb';
 import cors from 'cors';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const uri = 'mongodb+srv://brunosurijon:Bruno2025@gondoleando.dbvpois.mongodb.net/Gondoleando?retryWrites=true&w=majority';
 const client = new MongoClient(uri);
 const dbName = 'Gondoleando';
 const JWT_SECRET = 'bruno123';
 
+// Фикс путей для ES-модуля
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Middlewares
 app.use(cors());
 app.use(express.json());
 app.use('/public', express.static('public'));
+
+// 👉 Статические файлы из сборки Vite
+app.use(express.static(path.join(__dirname, '../dist')));
+
+// 🔄 SPA fallback: все не-API маршруты отправляют index.html
+app.get(/^\/(?!api).*/, (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
+});
+
+// ======================
+// 📦 MongoDB и API
+// ======================
 
 async function getDB() {
   await client.connect();
@@ -235,7 +254,6 @@ app.delete('/api/listas', authMiddleware, async (req, res) => {
   }
 });
 
-
 app.get('/api/perfil', authMiddleware, async (req, res) => {
   try {
     const db = await getDB();
@@ -281,7 +299,7 @@ app.get('/api/sucursales-cercanas', async (req, res) => {
     res.json(sucursales.map(s => ({
       nombre: s.nombre,
       direccion: s.direccion,
-      distancia: Math.round(s.distancia), // en metros
+      distancia: Math.round(s.distancia),
       ubicacion: s.ubicacion
     })));
   } catch (err) {
@@ -290,6 +308,7 @@ app.get('/api/sucursales-cercanas', async (req, res) => {
   }
 });
 
+// 🚀 Запуск сервера
 app.listen(PORT, () => {
   console.log(`🚀 Servidor backend corriendo en http://localhost:${PORT}`);
 });
