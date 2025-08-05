@@ -283,7 +283,7 @@ export default {
     },
     cargarProductos() {
       this.cargando = true;
-      axios.get('http://localhost:10000/api/productos')
+      axios.get('https://gondoleando.onrender.com/api/productos')
         .then(response => {
           this.productos = response.data;
           if (this.esMobile) {
@@ -361,7 +361,7 @@ export default {
         const token = localStorage.getItem('token');
         if (token) {
           try {
-            await fetch('http://localhost:10000/api/listas', {
+            await fetch('https://gondoleando.onrender.com/api/listas', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -397,7 +397,7 @@ export default {
       const token = localStorage.getItem('token');
       if (token) {
         try {
-          await fetch('http://localhost:10000/api/listas', {
+          await fetch('https://gondoleando.onrender.com/api/listas', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

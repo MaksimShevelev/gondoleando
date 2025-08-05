@@ -59,7 +59,7 @@ async function scrapearTodasLasPaginas(baseUrl, categoria) {
       ...p,
       categoria,
       supermercado: 'Mas',
-      logo: 'http://localhost:10000/public/img/mas.png'
+      logo: 'https://gondoleando.onrender.com/public/img/mas.png'
     }));
 
     todosLosProductos = todosLosProductos.concat(productosConCategoria);

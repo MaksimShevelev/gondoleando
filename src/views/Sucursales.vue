@@ -118,7 +118,7 @@ export default {
   methods: {
     async obtenerSucursales(lat, lng) {
       try {
-        const res = await fetch(`http://localhost:10000/api/sucursales-cercanas?lat=${lat}&lng=${lng}`);
+        const res = await fetch(`https://gondoleando.onrender.com/api/sucursales-cercanas?lat=${lat}&lng=${lng}`);
         if (!res.ok) throw new Error('Error al cargar sucursales');
         const data = await res.json();
 
