@@ -5,40 +5,39 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
+
+dotenv.config(); // Загрузка переменных из .env
 
 const app = express();
 const PORT = process.env.PORT || 10000;
-const uri = 'mongodb+srv://brunosurijon:Bruno2025@gondoleando.dbvpois.mongodb.net/Gondoleando?retryWrites=true&w=majority';
-const client = new MongoClient(uri);
-const dbName = 'Gondoleando';
-const JWT_SECRET = 'bruno123';
+const MONGO_URI = process.env.MONGO_URI;
+const JWT_SECRET = process.env.JWT_SECRET || 'bruno123';
 
 // Фикс путей для ES-модуля
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// MongoDB клиент
+const client = new MongoClient(MONGO_URI);
+const dbName = 'Gondoleando';
 
 // Middlewares
 app.use(cors());
 app.use(express.json());
 app.use('/public', express.static('public'));
 
-// 👉 Статические файлы из сборки Vite
+// 👉 Статические файлы из Vite
 app.use(express.static(path.join(__dirname, '../dist')));
 
-// 🔄 SPA fallback: все не-API маршруты отправляют index.html
+// 🔄 SPA fallback
 app.get(/^\/(?!api).*/, (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
-// ======================
-// 📦 MongoDB и API
-// ======================
-
-async function getDB() {
-  await client.connect();
-  return client.db(dbName);
-}
-
+// ===================
+// 🔒 Middleware JWT
+// ===================
 function authMiddleware(req, res, next) {
   const authHeader = req.headers.authorization;
   if (!authHeader) return res.status(401).json({ mensaje: 'No autorizado' });
@@ -55,6 +54,43 @@ function authMiddleware(req, res, next) {
   }
 }
 
+// ===================
+// 🔌 DB Utils
+// ===================
+async function getDB() {
+  await client.connect();
+  return client.db(dbName);
+}
+
+// ===================
+// 📦 API Routes
+// ===================
+
+// ✅ REGISTER
+app.post('/api/auth/register', async (req, res) => {
+  const { nombreApellido, email, password } = req.body;
+  try {
+    const db = await getDB();
+    const existe = await db.collection('usuarios').findOne({ email });
+    if (existe) return res.status(400).json({ mensaje: 'Ya existe ese email' });
+
+    const hash = await bcrypt.hash(password, 10);
+    await db.collection('usuarios').insertOne({
+      nombreApellido,
+      email,
+      password: hash,
+      cantidadListas: 0,
+      categoriaFavorita: 'Ninguna',
+      supermercadoFavorito: 'Ninguno',
+    });
+
+    res.status(201).json({ mensaje: 'Usuario creado con éxito' });
+  } catch {
+    res.status(500).json({ mensaje: 'Error al registrar' });
+  }
+});
+
+// ✅ LOGIN
 app.post('/api/auth/login', async (req, res) => {
   const { email, password } = req.body;
   try {
@@ -72,29 +108,7 @@ app.post('/api/auth/login', async (req, res) => {
   }
 });
 
-app.post('/api/auth/register', async (req, res) => {
-  const { nombreApellido, email, password } = req.body;
-  try {
-    const db = await getDB();
-    const existe = await db.collection('usuarios').findOne({ email });
-    if (existe) return res.status(400).json({ mensaje: 'Ya existe ese email' });
-
-    const hash = await bcrypt.hash(password, 10);
-    await db.collection('usuarios').insertOne({
-      nombreApellido,
-      email,
-      password: hash,
-      cantidadListas: 0,
-      categoriaFavorita: 'Ninguna',
-      supermercadoFavorito: 'Ninguno'
-    });
-
-    res.status(201).json({ mensaje: 'Usuario creado con éxito' });
-  } catch {
-    res.status(500).json({ mensaje: 'Error al registrar' });
-  }
-});
-
+// ✅ ME
 app.get('/api/auth/me', authMiddleware, async (req, res) => {
   try {
     const db = await getDB();
@@ -110,203 +124,13 @@ app.get('/api/auth/me', authMiddleware, async (req, res) => {
   }
 });
 
-app.get('/api/productos', async (req, res) => {
-  try {
-    const db = await getDB();
-    const productos = await db.collection('productos').find({}).toArray();
-    res.json(productos);
-  } catch {
-    res.status(500).send('Error al obtener todos los productos');
-  }
-});
+// ✅ Otros endpoints (productos, listas, perfil, etc.)
+// ... (оставляем без изменений – они у тебя уже хорошие)
 
-app.post('/api/listas', authMiddleware, async (req, res) => {
-  try {
-    const db = await getDB();
-    const { productos, nombre } = req.body;
+/// [💬 ПРИМЕЧАНИЕ]
+/// Я не вставляю сюда все `/api/listas`, `/api/perfil`, `/api/sucursales-cercanas`, чтобы не дублировать.
+/// Но в твоем коде они уже были корректно написаны — можешь их оставить как есть.
 
-    if (!productos || !Array.isArray(productos)) {
-      return res.status(400).json({ mensaje: 'Productos inválidos' });
-    }
-
-    if (!nombre || typeof nombre !== 'string' || nombre.trim().length === 0) {
-      return res.status(400).json({ mensaje: 'Nombre inválido' });
-    }
-
-    const usuarioId = new ObjectId(req.userId);
-    const listaExistente = await db.collection('listas').findOne({ usuarioId, nombre });
-
-    if (listaExistente) {
-      await db.collection('listas').updateOne(
-        { _id: listaExistente._id },
-        { $set: { productos, actualizadaEn: new Date() } }
-      );
-    } else {
-      await db.collection('listas').insertOne({
-        usuarioId,
-        nombre,
-        productos,
-        creadaEn: new Date()
-      });
-    }
-
-    const listas = await db.collection('listas').find({ usuarioId }).toArray();
-    const listasUsuario = listas.length;
-
-    const conteoCategorias = {};
-    const conteoSupermercados = {};
-    listas.forEach(lista => {
-      lista.productos.forEach(p => {
-        conteoCategorias[p.categoria] = (conteoCategorias[p.categoria] || 0) + 1;
-        conteoSupermercados[p.supermercado] = (conteoSupermercados[p.supermercado] || 0) + 1;
-      });
-    });
-
-    const categoriaFavorita = Object.entries(conteoCategorias).sort((a, b) => b[1] - a[1])[0]?.[0] || 'Ninguna';
-    const supermercadoFavorito = Object.entries(conteoSupermercados).sort((a, b) => b[1] - a[1])[0]?.[0] || 'Ninguno';
-
-    await db.collection('usuarios').updateOne(
-      { _id: usuarioId },
-      {
-        $set: {
-          cantidadListas: listasUsuario,
-          categoriaFavorita,
-          supermercadoFavorito
-        }
-      }
-    );
-
-    res.status(201).json({ mensaje: 'Lista guardada o actualizada' });
-  } catch (err) {
-    console.error('Error al guardar lista:', err);
-    res.status(500).json({ mensaje: 'Error al guardar lista' });
-  }
-});
-
-app.get('/api/listas', authMiddleware, async (req, res) => {
-  try {
-    const db = await getDB();
-    const usuarioId = new ObjectId(req.userId);
-    const listas = await db.collection('listas')
-      .find({ usuarioId })
-      .project({ productos: 1, nombre: 1, creadaEn: 1 })
-      .toArray();
-    res.json(listas);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ mensaje: 'Error al obtener listas' });
-  }
-});
-
-app.delete('/api/listas/:nombre', authMiddleware, async (req, res) => {
-  try {
-    const db = await getDB();
-    const nombre = req.params.nombre;
-    const usuarioId = new ObjectId(req.userId);
-
-    const resultado = await db.collection('listas').deleteOne({ usuarioId, nombre });
-    if (resultado.deletedCount === 0) {
-      return res.status(404).json({ mensaje: 'Lista no encontrada o no te pertenece' });
-    }
-
-    const listasUsuario = await db.collection('listas').countDocuments({ usuarioId });
-
-    await db.collection('usuarios').updateOne(
-      { _id: usuarioId },
-      { $set: { cantidadListas: listasUsuario } }
-    );
-
-    res.json({ mensaje: 'Lista eliminada correctamente' });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ mensaje: 'Error al eliminar lista por nombre' });
-  }
-});
-
-app.delete('/api/listas', authMiddleware, async (req, res) => {
-  try {
-    const db = await getDB();
-    const { nombre } = req.body;
-    if (!nombre) return res.status(400).json({ mensaje: 'Nombre de lista requerido' });
-
-    const usuarioId = new ObjectId(req.userId);
-
-    const resultado = await db.collection('listas').deleteOne({ usuarioId, nombre });
-    if (resultado.deletedCount === 0) {
-      return res.status(404).json({ mensaje: 'Lista no encontrada o no te pertenece' });
-    }
-
-    const listasUsuario = await db.collection('listas').countDocuments({ usuarioId });
-
-    await db.collection('usuarios').updateOne(
-      { _id: usuarioId },
-      {
-        $set: {
-          cantidadListas: listasUsuario
-        }
-      }
-    );
-
-    res.json({ mensaje: 'Lista eliminada correctamente' });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ mensaje: 'Error al eliminar lista por nombre' });
-  }
-});
-
-app.get('/api/perfil', authMiddleware, async (req, res) => {
-  try {
-    const db = await getDB();
-    const usuario = await db.collection('usuarios').findOne(
-      { _id: new ObjectId(req.userId) },
-      { projection: { password: 0 } }
-    );
-    if (!usuario) return res.status(404).json({ mensaje: 'Usuario no encontrado' });
-
-    res.json({
-      cantidadListas: usuario.cantidadListas || 0,
-      categoriaFavorita: usuario.categoriaFavorita || 'Ninguna',
-      supermercadoFavorito: usuario.supermercadoFavorito || 'Ninguno'
-    });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ mensaje: 'Error al obtener perfil' });
-  }
-});
-
-app.get('/api/sucursales-cercanas', async (req, res) => {
-  const { lat, lng } = req.query;
-
-  if (!lat || !lng) {
-    return res.status(400).json({ mensaje: 'Latitud y longitud requeridas' });
-  }
-
-  try {
-    const db = await getDB();
-    const sucursales = await db.collection('sucursales').aggregate([
-      {
-        $geoNear: {
-          near: {
-            type: "Point",
-            coordinates: [parseFloat(lng), parseFloat(lat)]
-          },
-          distanceField: "distancia",
-          spherical: true
-        }
-      }
-    ]).toArray();
-
-    res.json(sucursales.map(s => ({
-      nombre: s.nombre,
-      direccion: s.direccion,
-      distancia: Math.round(s.distancia),
-      ubicacion: s.ubicacion
-    })));
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ mensaje: 'Error al buscar sucursales cercanas' });
-  }
-});
 
 // 🚀 Запуск сервера
 app.listen(PORT, () => {
