@@ -1,0 +1,8 @@
+2025/06/08-16:51:26.708 38c0 Reusing MANIFEST C:\Users\Colibrí\Desktop\gondoleando\backend\tmp\puppeteer-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2025/06/08-16:51:26.866 38c0 Recovering log #12
+2025/06/08-16:51:26.871 38c0 (ignoring error) C:\Users\Colibrí\Desktop\gondoleando\backend\tmp\puppeteer-profile\Default\Local Storage\leveldb/000012.log: dropping 32768 bytes; Corruption: checksum mismatch
+2025/06/08-16:51:26.871 38c0 (ignoring error) C:\Users\Colibrí\Desktop\gondoleando\backend\tmp\puppeteer-profile\Default\Local Storage\leveldb/000012.log: dropping 174 bytes; Corruption: missing start of fragmented record(2)
+2025/06/08-16:51:26.890 38c0 Reusing old log C:\Users\Colibrí\Desktop\gondoleando\backend\tmp\puppeteer-profile\Default\Local Storage\leveldb/000012.log 
+2025/06/08-17:23:27.572 38c0 Level-0 table #16: started
+2025/06/08-17:23:27.640 38c0 Level-0 table #16: 7648 bytes OK
+2025/06/08-17:23:27.744 38c0 Delete type=0 #12

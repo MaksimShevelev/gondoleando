@@ -1,0 +1,867 @@
+[
+  {
+    "nombre": "Coto",
+    "direccion": "Agüero 616",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4120, -34.6100 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Díaz Vélez 4531",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.43118, -34.60855 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Gallo 250",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.41363, -34.60565 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "México 2236",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.39860, -34.61653 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "French 2417",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.39944, -34.59333 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Tte. Gral. Juan Domingo Perón 2070",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.40700, -34.61500 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Martín García 743",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.37350, -34.62800 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Paraguay 2672",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.39300, -34.58700 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Murillo 551",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.40000, -34.59600 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Charcas 2980",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.40553, -34.58758 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Junín 1073",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.39125, -34.59822 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Elcano 3002",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.46271, -34.57936 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Monroe 3298",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.46853, -34.55760 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Cabildo 545",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.45182, -34.56740 ] }
+  },
+   {
+    "nombre": "Coto",
+    "direccion": "Amenábar 2134",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.44869, -34.57194 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Maure 1725",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.44179, -34.57310 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Teodoro García 2419",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.45166, -34.56790 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Boedo 777",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.41550, -34.62608 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Santa Fe 3760",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.40517, -34.58274 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Rivadavia 9840",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.47945, -34.63680 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Gaona 1956",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.46415, -34.62228 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Yerbal 1062",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.44364, -34.61826 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Pedro Goyena 565",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.43108, -34.62926 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Viamonte 1571",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.38481, -34.60226 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Elcano 3693",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.47391, -34.58147 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Bartolomé Mitre 1558",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.38975, -34.60458 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Lima 1553",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.39790, -34.62565 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Eva Perón 2202",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.44175, -34.64136 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Directorio 2647",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.46852, -34.64356 ] }
+  },
+   {
+    "nombre": "Coto",
+    "direccion": "J.B. Alberdi 1737",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.46331, -34.65120 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Nazca 1244",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.47736, -34.63143 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "San Pedrito 72",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.49550, -34.62734 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Avellaneda 3758",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.44452, -34.66692 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Emilio Castro 7661",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.53152, -34.66989 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Castro Barros 30",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.44879, -34.63932 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Larrazabal 3443",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.48627, -34.67987 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Lope de Vega 1742",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.50389, -34.65431 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Cabildo 4125",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.46217, -34.57344 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Libertador 6840",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.47415, -34.55813 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Hipólito Yrigoyen 3702",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.38597, -34.65092 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Rivadavia 2846",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.44915, -34.61876 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Alsina 2300",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.39281, -34.61346 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Scalabrini Ortiz 1688",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.42132, -34.59683 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Cerviño 3515",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.39312, -34.57358 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Honduras 3862",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.41423, -34.59512 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Asamblea 1100",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.40892, -34.63554 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. San Martín 2095",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.47743, -34.59703 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Alvarez Jonte 2502",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.49215, -34.63254 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. La Plata 2392",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.41795, -34.63372 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Francisco Rabanal 1345",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.46012, -34.62145 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Antártida Argentina 1160",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.42080, -34.61512 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Ricardo Balbín 4027",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.49520, -34.57188 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. J. de Garay 2700",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.38192, -34.61645 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. San Juan 2168",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.40125, -34.61775 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Perú 1496",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.37940, -34.61683 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Eva Perón 4730",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.49122, -34.61780 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Corrientes 5748",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.43870, -34.59922 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Lope de Vega 2503",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.50690, -34.60115 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Sanabria 3320",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.50830, -34.58750 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Segurola 1701",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.50492, -34.60237 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Piedrabuena 4902",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.50752, -34.62933 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Soldado de la Frontera 5258",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.50120, -34.62600 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. La Plata 541",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.44580, -34.62475 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Av. Monroe 5055",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.47242, -34.58855 ] }
+  },
+  {
+    "nombre": "Coto",
+    "direccion": "Cullen 5085",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.47021, -34.58868 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Cabildo 34",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4359998, -34.5748758 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Santa Fe 5234",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.414070, -34.590350 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Álvarez Jonte 6383",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.5145559, -34.6268407 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Warnes 2707",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4744440, -34.5975000 ] }
+  },
+   {
+    "nombre": "Carrefour",
+    "direccion": "Av. Gral. Paz 12950",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.5146803, -34.6647727 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Rivadavia 6538",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4581908, -34.6273994 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Santa Fe 1954",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4160, -34.5968 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Vicente López 1676",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4345, -34.5799 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Cabildo 2441",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4456, -34.5752 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Rivadavia 999",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3836, -34.6124 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Santa Fe 3368",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4095, -34.5892 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Rivadavia 2243",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3987, -34.6151 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Juramento 2971",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4788, -34.5566 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Corrientes 1160",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3883, -34.6056 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Olazábal 4734",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4809, -34.5621 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Cabildo 3190",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4664, -34.5588 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Beruti 2951",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4139, -34.5887 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "José Pedro Varela 4750",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4860, -34.6092 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Scalabrini Ortíz 3128",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4365, -34.5868 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Donato Alvarez 1351",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4567, -34.6201 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Roosevelt 5749",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4834, -34.5833 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Elcano 3380",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4570, -34.5636 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Nazca 2951",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4968, -34.6097 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Mosconi 2861",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4960, -34.5865 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Jerónimo Salguero 3212",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.403741, -34.575198 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Fco. Beiró 5204",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.52354, -34.613041 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. San Juan 4351",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.42618, -34.626914 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "La Rioja 2040",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4196, -34.5943 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Montes de Oca 304",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3840, -34.6172 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Fray C. Rodríguez 464",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4181, -34.6260 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Charcas 3940",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4237, -34.5790 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Caseros 2423",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3864, -34.6280 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Chilavert 6280",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4937, -34.6379 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Arce 728",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4595, -34.6255 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Otamendi 454",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4512, -34.6219 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. del Barco Centenera 177",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4514, -34.6317 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Aguirre 236",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4238, -34.6134 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Montañeses 2067",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4885, -34.5762 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Hidalgo 92",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4187, -34.6031 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Rosario 85",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4021, -34.6118 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Directorio 3960",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4601, -34.6448 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Córdoba 1631",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4144, -34.5988 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Raúl Scalabrini Ortíz 1840",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4422, -34.5926 ] }
+  },
+  {
+    "nombre": "Carrefour",
+    "direccion": "Av. Rivadavia 3221",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4317, -34.6090 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Lope de Vega 2159",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.486, -34.604 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Ferré 6432",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.410, -34.630 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Fernández de la Cruz 6154",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.441, -34.657 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Nazca 1663",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.489, -34.610 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Regimiento de Patricios 795",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3789, -34.6203 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "José Hernández 2469",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4412, -34.5649 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Cramer 2875",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4426, -34.5558 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Monroe 2442",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4643, -34.5565 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Independencia 3311",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4140, -34.6098 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Entre Ríos 735",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3920, -34.6130 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Rivadavia 3050",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4075, -34.6059 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Álvarez Thomas 849",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4489, -34.6109 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Dorrego 1034",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4367, -34.5988 ] }
+  },
+   {
+    "nombre": "Día",
+    "direccion": "Av. Federico Lacroze 3178",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4449, -34.5889 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Lima 1457",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3972, -34.6125 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Gaona 3163",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4501, -34.6046 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Rivadavia 7370",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4332, -34.6099 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "José Bonifacio 1773",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4397, -34.6174 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Donato Álvarez 442",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4458, -34.6178 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Juan B. Justo 6252",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4632, -34.5902 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Suárez 495",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3715, -34.6340 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Gral. Gregorio Aráoz de Lamadrid 728",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3710, -34.6345 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Juan Bautista Alberdi 5655",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4610, -34.6375 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Cl. Lisandro de la Torre 1151",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.5000, -34.6300 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Chile 1347",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3950, -34.6070 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Sanabria 2469",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4950, -34.6190 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Lope de Vega 1525",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4870, -34.6140 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Cabildo 3140",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4602, -34.5417 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Crisólogo Larralde 2287",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4693, -34.5415 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Cramer 3226",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4705, -34.5471 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Córdoba 5101",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4326, -34.5829 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Thames 2447",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4245, -34.5892 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Scalabrini Ortiz 2067",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4185, -34.5893 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Migueletes 752",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4331, -34.5632 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Santa Fe 5222",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4194, -34.5807 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Córdoba 4085",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4323, -34.5955 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Juan Francisco Seguí 4668",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4142, -34.5746 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Jerónimo Salguero 3044",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4183, -34.5979 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Santa Fe 4012",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4181, -34.5898 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Eva Perón 3568",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4457, -34.6418 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. del Barco Centenera 2279",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4431, -34.6332 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Brasil 2450",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3791, -34.6083 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "La Rioja 1850",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3794, -34.6141 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. de los Incas 5260",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4536, -34.5662 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Charcas 2725",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4278, -34.5934 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Cramer 4345",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4661, -34.5413 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. San Juan 2641",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3958, -34.6129 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. San Juan 3153",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3969, -34.6130 ] }
+  },
+   {
+    "nombre": "Día",
+    "direccion": "Sarmiento 1282",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3767, -34.6089 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Córdoba 1365",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4136, -34.6027 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Bolívar 953",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.3731, -34.6174 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Rivadavia 8875",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.5043, -34.6193 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Francisco Beiró 3146",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.5145, -34.6153 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Gral. José Gervasio Artigas 1744",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.5048, -34.6174 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Juan B. Alberdi 4730",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.5002, -34.6408 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Cl. Rivadavia 9650",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.5142, -34.6421 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. de los Incas 4355",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4741, -34.5899 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Triunvirato 3217",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4760, -34.5917 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Triunvirato 5480",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4887, -34.5947 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Olazábal 4832",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4814, -34.5892 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Triunvirato 4933",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4839, -34.5883 ] }
+  },
+  {
+    "nombre": "Día",
+    "direccion": "Av. Congreso 5781",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.4701, -34.5896 ] }
+  },
+  {
+    "nombre": "Mas",
+    "direccion": "Av. de los Constituyentes 6020",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.5220, -34.6420 ] }
+  },
+  {
+    "nombre": "Mas",
+    "direccion": "Av. Eva Perón 5526",
+    "ubicacion": { "type": "Point", "coordinates": [ -58.5195, -34.6435 ] }
+  }
+]
