@@ -58,7 +58,7 @@ async function handleRegister() {
   const startTime = Date.now();
 
   try {
-    const res = await fetch("https://gondoleando.onrender.com/api/auth/register", {
+    const res = await fetch("http://localhost:10000/api/auth/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
